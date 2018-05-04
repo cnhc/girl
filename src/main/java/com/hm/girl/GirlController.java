@@ -48,8 +48,8 @@ public class GirlController {
     //更新一个女生
     @PutMapping(value = "/girls/{id}")
     public Girl girlUpdate(@PathVariable("id")Integer id,
-                            @RequestParam("cupSize")String cupSize,
-                            @RequestParam("age") Integer age){
+                           @RequestParam("cupSize")String cupSize,
+                           @RequestParam("age") Integer age){
         Girl girl = new Girl();
         girl.setId(id);
         girl.setCupSize(cupSize);
