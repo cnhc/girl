@@ -32,7 +32,7 @@ public class GirlController {
      */
     @PostMapping(value = "/girls")
     public Girl girlAdd(@RequestParam("cupSize")String cupSize,
-                         @RequestParam("age") Integer age){
+                        @RequestParam("age") Integer age){
         Girl girl = new Girl();
         girl.setCupSize(cupSize);
         girl.setAge(age);
